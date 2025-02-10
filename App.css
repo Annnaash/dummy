@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.search {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.tabell {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+  gap: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tabell:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.row div {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.row:first-child {
+  font-weight: bold;
+}
+
+.tabell-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabell-details .row-title {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .tabell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
